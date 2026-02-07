@@ -1,0 +1,23 @@
+<div class="flex min-h-screen">
+  
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+
+  <!-- Conteúdo -->
+  <div class="flex flex-col flex-1">
+
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Página -->
+    <main class="flex-1 p-6 bg-gray-100">
+      <router-outlet></router-outlet>
+    </main>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+
+  </div>
+</div>
+
+<!-- layout base -->

@@ -1,0 +1,57 @@
+<h1 class="text-2xl font-bold mb-6">Dashboard</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gaps-4 mb-6">
+
+  <div class="bg-white p-4 rounded shadow">
+    <p class="text-gray-500">Membros</p>
+    <p class="text-2xl font-bold">
+      {{ membros.membros().length }}
+    </p>
+  </div>
+
+  <div class="bg-white p-4 rounded shadow">
+    <p class="text-gray-500">Total Doações</p>
+    <p class="text-2xl font-bold">
+      R$ {{ doacoes.total() }}
+    </p>
+  </div>
+
+  <div class="bg-white p-4 rounded shadow">
+    <p class="text-gray-500">Avisos</p>
+    <p class="text-2xl font-bold">
+      {{ avisos.avisos().length }}
+    </p>
+  </div>
+
+  <div class="bg-white p-4 rounded shadow">
+    <p class="text-gray-500">Escalas</p>
+    <p class="text-2xl font-bold">
+      {{ Escalas.escalas().length }}
+    </p>
+  </div>
+
+</div>
+
+<!-- PRÓXIMAS ESCALAS -->
+
+<div class="bg-white p-4 rounded shadow mb-6">
+  <h2 class="font-semibold mb-3">Próximas Escalas</h2>
+
+  <div *ngFor="let e of Escalas.proximas()">
+    {{ e.ministerio }} — {{ e.data }}
+  </div>
+</div>
+
+<!-- AVISOS RECENTES -->
+
+<div class="bg-white p-4 rounded shadow">
+  <h2 class="font-semibold mb-3">Avisos Recentes</h2>
+
+  <div *ngFor="let a of avisos.recentes()">
+    {{ a.titulo }} — {{ a.data }}
+  </div>
+</div>
+
+<!-- Cards de resumo, Mostra métricas principais. -->
+ <!-- Listas resumidas, Mostra próximos eventos e avisos -->
+  <!--  -->

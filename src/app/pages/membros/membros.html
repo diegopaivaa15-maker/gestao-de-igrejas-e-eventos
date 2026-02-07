@@ -1,0 +1,75 @@
+<h2 class="text-2xl font-bold mb-4">Membros</h2>
+
+<!-- Formulário -->
+<form
+  [formGroup]="form"
+  (ngSubmit)="adicionar()"
+  class="bg-white p-4 rounded shadow mb-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+
+  <input
+    type="text"
+    placeholder="Nome"
+    formControlName="nome"
+    class="border p-2 rounded" />
+
+  <input
+    type="email"
+    placeholder="Email"
+    formControlName="email"
+    class="border p-2 rounded" />
+
+  <input
+    type="text"
+    placeholder="Telefone"
+    formControlName="telefone"
+    class="border p-2 rounded" />
+
+  <button
+    type="submit"
+    [disabled]="form.invalid"
+    class="bg-blue-400 text-white rounded px-4 py-2 disabled:opacity-50">
+    Adicionar
+  </button>
+
+</form>
+
+<!-- Tabela -->
+<table class="w-full bg-white rounded shadow">
+  <thead class="bg-slate-200">
+    <tr>
+      <th class="p-2 text-left">Nome</th>
+      <th class="p-2 text-left">Email</th>
+      <th class="p-2 text-left">Telefone</th>
+      <th class="p-2 text-center">Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let membro of membros" class="border-b">
+      <td class="p-2">{{ membro.nome }}</td>
+      <td class="p-2">{{ membro.email }}</td>
+      <td class="p-2">{{ membro.telefone }}</td>
+      <td class="p-2 text-center">
+        <button
+          (click)="excluir(membro.id)"
+          class="bg-red-600 text-white px-3 py-1 rounded">
+          Excluir
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Injeção de dependência -->
+ <!-- Observable + subscribe -->
+  <!-- Diretiva *ngFor -->
+   <!-- Binding de dados no template -->
+    <!-- Estilização com Tailwind -->
+
+    <!-- Ao colocar os botao -->
+
+    <!-- FormGroup no template -->
+      <!--FormGroup no template  -->
+      <!-- Evento submit -->
+       <!-- Evento submit -->
+        <!-- UI com Tailwind -->

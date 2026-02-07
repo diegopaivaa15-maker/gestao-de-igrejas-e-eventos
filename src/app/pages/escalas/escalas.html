@@ -1,0 +1,63 @@
+<h1 class="text-2xl font-bold mb-4">Escalas</h1>
+
+<div class="bg-white p-4 rounded shadow mb-6">
+  <h2 class="font-semibold mb-2">Cadastrar Escala</h2>
+
+  <input
+    class="border p-2 w-full mb-2"
+    placeholder="Título"
+    [(ngModel)]="titulo"
+  />
+
+  <input
+    type="date"
+    class="border p-2 w-full mb-2"
+    [(ngModel)]="data"
+  />
+
+  <div class="mb-2">
+    <p class="font-medium mb-1">Selecionar Membros:</p>
+    <label *ngFor="let m of membros()" class="block">
+      <input
+        type="checkbox"
+        [value]="m.id"
+        (change)="
+          $event.target.checked
+            ? membrosSelecionados.push(m.id)
+            : membrosSelecionados.splice(membrosSelecionados.indexOf(m.id), 1)
+        "
+      />
+      {{ m.nome }}
+    </label>
+  </div>
+
+  <button
+    class="bg-blue-600 text-white px-4 py-2 rounded"
+    (click)="adicionarEscala()"
+  >
+    Salvar Escala
+  </button>
+</div>
+
+<div class="space-y-3">
+  <div
+    *ngFor="let e of escalas()"
+    class="border p-3 rounded"
+  >
+    <p><strong>{{ e.titulo }}</strong></p>
+    <p>📅 {{ e.data }}</p>
+    <p>
+      👥
+      <span *ngFor="let id of e.membrosIds; let last = last">
+        {{ nomeMembro(id) }}{{ !last ? ', ' : '' }}
+      </span>
+    </p>
+
+    <button
+      class="text-red-600 mt-2"
+      (click)="excluirEscala(e.id)"
+    >
+      Excluir
+    </button>
+  </div>
+</div>

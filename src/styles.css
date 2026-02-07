@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-white rounded shadow p-4;
+}
+
+.btn {
+  @apply px-4 py-2 rounded text-white;
+}
+
+.btn-primary {
+  @apply bg-blue-600;
+}
+
+.btn-danger {
+  @apply bg-red-600;
+}
+
+/* Criando classes reutilizáveis. */
+/*  */

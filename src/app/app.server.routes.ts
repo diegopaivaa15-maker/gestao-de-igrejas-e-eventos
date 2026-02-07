@@ -1,4 +1,4 @@
-import { RenderMode, ServerRoute } from '@angular/ssr';
+import { ServerRoute, RenderMode } from '@angular/ssr';
 
 export const serverRoutes: ServerRoute[] = [
   {
@@ -6,3 +6,5 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender
   }
 ];
+
+// Rederizar as rotas 

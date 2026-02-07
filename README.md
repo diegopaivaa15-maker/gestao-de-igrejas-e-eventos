@@ -1,59 +1,210 @@
-# IgrejaSystem
+Sistema Igreja & Eventos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
+Sistema web administrativo desenvolvido para gestão de igrejas e eventos, permitindo controle de membros, escalas de serviço, doações simuladas e avisos internos, com dashboard de métricas e arquitetura moderna baseada em Angular Standalone + Signals.
 
-## Development server
+Projeto construído com foco em boas práticas, componentização, estado reativo e estrutura de portfólio profissional.
 
-To start a local development server, run:
+A aplicação foi desenvolvida como um sistema completo front-end para administração de rotinas de igreja/eventos, simulando um ambiente real de gestão com múltiplos módulos integrados e dashboard central.
 
-```bash
-ng serve
-```
+O projeto demonstra:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Arquitetura Angular moderna
 
-## Code scaffolding
+Gerenciamento de estado com Signals
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Componentes Standalone
 
-```bash
-ng generate component component-name
-```
+Estrutura modular escalável
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+UI responsiva
 
-```bash
-ng generate --help
-```
+Simulação de API (fake data)
 
-## Building
+Padrão de código pronto para backend real
 
-To build the project run:
+  -Tecnologias Utilizadas
 
-```bash
-ng build
-```
+Angular 17+
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+TypeScript
 
-## Running unit tests
+Standalone Components
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Angular Signals (estado reativo)
 
-```bash
-ng test
-```
+Angular Router (rotas lazy load)
 
-## Running end-to-end tests
+Reactive Patterns
 
-For end-to-end (e2e) testing, run:
+Tailwind CSS (layout e responsividade)
 
-```bash
-ng e2e
-```
+Vite (builder Angular moderno)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+HTML5 + CSS3
 
-## Additional Resources
+  -Arquitetura Aplicada
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+O sistema foi estruturado utilizando:
+
+  -Standalone Components
+
+Sem NgModules — arquitetura moderna recomendada pelo Angular.
+
+  -Stores com Signals
+
+Estado global centralizado em services reativos:
+
+membros.store
+
+escalas.store
+
+doacoes.store
+
+avisos.store
+
+Permite compartilhamento de dados entre telas e dashboard.
+
+  -Lazy Load de Rotas
+
+Cada módulo carregado sob demanda:
+
+membros
+
+escalas
+
+doações
+
+avisos
+
+dashboard
+
+Melhora performance e escalabilidade.
+
+  -Componentização de Layout
+
+Layout base reutilizável com:
+
+Header
+
+Sidebar
+
+Footer
+
+RouterOutlet central
+
+-Módulos Implementados
+-Módulo de Membros
+
+CRUD completo
+
+Cadastro de nome e contato
+
+Listagem dinâmica
+
+Exclusão de registros
+
+Estado reativo
+
+Demonstra: formulários, lista dinâmica, operações CRUD front-end.
+
+  -Módulo de Escalas
+
+Cadastro de escalas
+
+Associação com membros
+
+Controle por data
+
+Edição e exclusão
+
+Visualização de próximas escalas
+
+Demonstra: relacionamento de dados e controle de agenda.
+
+  -Módulo de Doações (Simulado)
+
+Registro de doações fake
+
+Listagem
+
+Exclusão
+
+Soma automática
+
+Filtro por período
+
+Total calculado com computed signals
+
+Demonstra: cálculos reativos e filtros por data.
+
+  -Módulo de Avisos
+
+CRUD completo
+
+Marcação de aviso importante
+
+Destaque visual
+
+Ordenação por data
+
+Base para exibição no dashboard
+
+Demonstra: prioridade lógica + destaque condicional.
+
+  -Dashboard
+
+Resumo geral do sistema:
+
+Total de membros
+
+Total de doações
+
+Próximas escalas
+
+Avisos recentes
+
+Cards de métricas
+
+Layout responsivo
+
+Demonstra: agregação de dados multi-store.
+
+  -Responsividade
+
+Interface adaptável com Tailwind:
+
+Grid responsivo
+
+Sidebar oculta em mobile
+
+Cards adaptativos
+
+Layout mobile-first
+
+  -Padronização Visual
+
+Criado mini design system com:
+
+Classes reutilizáveis
+
+Cards padrão
+
+Botões padronizados
+
+Hierarquia visual consistente
+
+  -Conceitos Aplicados
+
+Estado reativo moderno
+
+Computed values
+
+Imutabilidade
+
+Lazy loading
+
+Separação de responsabilidades
+
+DRY (Don't Repeat Yourself)
+
+Component driven design
