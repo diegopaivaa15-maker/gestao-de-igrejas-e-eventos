@@ -1,57 +1,52 @@
 
-Sistema web administrativo desenvolvido para gestão de igrejas e eventos, permitindo controle de membros, escalas de serviço, doações simuladas e avisos internos, com dashboard de métricas e arquitetura moderna baseada em Angular Standalone + Signals.
+🏛️ Sistema Administrativo para Igrejas e Eventos
 
-Projeto construído com foco em boas práticas, componentização, estado reativo e estrutura de portfólio profissional.
+Sistema web administrativo desenvolvido para gestão de membros, escalas de serviço, doações simuladas e avisos internos, com dashboard central integrado.
 
-A aplicação foi desenvolvida como um sistema completo front-end para administração de rotinas de igreja/eventos, simulando um ambiente real de gestão com múltiplos módulos integrados e dashboard central.
+Construído com arquitetura moderna baseada em Angular Standalone + Signals, simulando um ambiente real de gestão multi-módulos.
 
-O projeto demonstra:
+🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido como um sistema front-end completo, com foco em:
 
 Arquitetura Angular moderna
 
-Gerenciamento de estado com Signals
-
-Componentes Standalone
+Gerenciamento de estado reativo com Signals
 
 Estrutura modular escalável
 
-UI responsiva
+Componentização avançada
 
-Simulação de API (fake data)
+Simulação de ambiente real corporativo
 
-Padrão de código pronto para backend real
+Código preparado para integração futura com backend
+
+Projeto ideal para demonstrar domínio em Angular 17+, arquitetura limpa e organização profissional de código.
 
 🧱 Tecnologias Utilizadas
 
-Angular 17+
+Framework: Angular 17+
 
-TypeScript
+Linguagem: TypeScript
 
-Standalone Components
+Estado Reativo: Angular Signals
 
-Angular Signals (estado reativo)
+Estilização: Tailwind CSS
 
-Angular Router (rotas lazy load)
-
-Reactive Patterns
-
-Tailwind CSS (layout e responsividade)
-
-Vite (builder Angular moderno)
+Build Tool: Vite
 
 HTML5 + CSS3
 
+Angular Router (Lazy Loading)
+
 🏗️ Arquitetura Aplicada
-
-O sistema foi estruturado utilizando:
-
 ✅ Standalone Components
 
-Sem NgModules — arquitetura moderna recomendada pelo Angular.
+Arquitetura moderna sem uso de NgModules, seguindo as recomendações atuais do Angular.
 
-✅ Stores com Signals
+✅ Gerenciamento de Estado com Signals
 
-Estado global centralizado em services reativos:
+Stores reativas centralizadas:
 
 membros.store
 
@@ -61,27 +56,35 @@ doacoes.store
 
 avisos.store
 
-Permite compartilhamento de dados entre telas e dashboard.
+Permite:
 
-✅ Lazy Load de Rotas
+Compartilhamento global de estado
 
-Cada módulo carregado sob demanda:
+Atualização automática da UI
 
-membros
+Cálculos reativos
 
-escalas
+Escalabilidade limpa
 
-doações
+✅ Lazy Loading de Rotas
 
-avisos
+Módulos carregados sob demanda:
 
-dashboard
+/membros
 
-Melhora performance e escalabilidade.
+/escalas
 
-✅ Componentização de Layout
+/doacoes
 
-Layout base reutilizável com:
+/avisos
+
+/dashboard
+
+Melhora performance e prepara o sistema para crescimento.
+
+✅ Layout Reutilizável
+
+Estrutura base composta por:
 
 Header
 
@@ -90,6 +93,8 @@ Sidebar
 Footer
 
 RouterOutlet central
+
+Seguindo princípio de separação de responsabilidades.
 
 📦 Módulos Implementados
 👥 Módulo de Membros
@@ -102,17 +107,15 @@ Listagem dinâmica
 
 Exclusão de registros
 
-Estado reativo
+Estado reativo com Signals
 
-Demonstra: formulários, lista dinâmica, operações CRUD front-end.
+Demonstra: formulários reativos, operações CRUD e atualização automática da UI.
 
 📅 Módulo de Escalas
 
 Cadastro de escalas
 
 Associação com membros
-
-Controle por data
 
 Edição e exclusão
 
@@ -124,7 +127,7 @@ Demonstra: relacionamento de dados e controle de agenda.
 
 Registro de doações fake
 
-Listagem
+Listagem dinâmica
 
 Exclusão
 
@@ -132,25 +135,23 @@ Soma automática
 
 Filtro por período
 
-Total calculado com computed signals
+Total calculado com Signals computados
 
-Demonstra: cálculos reativos e filtros por data.
+Demonstra: cálculos reativos, filtros e agregação de dados.
 
 📢 Módulo de Avisos
 
 CRUD completo
 
-Marcação de aviso importante
-
-Destaque visual
+Marcação de prioridade
 
 Ordenação por data
 
-Base para exibição no dashboard
+Destaque visual condicional
 
-Demonstra: prioridade lógica + destaque condicional.
+Demonstra: regras de negócio e lógica condicional.
 
-📊 Dashboard
+📊 Dashboard Central
 
 Resumo geral do sistema:
 
@@ -160,35 +161,33 @@ Total de doações
 
 Próximas escalas
 
-Avisos recentes
+Avisos importantes
 
-Cards de métricas
+Cards responsivos
 
-Layout responsivo
-
-Demonstra: agregação de dados multi-store.
+Demonstra: agregação de múltiplas stores e visão estratégica de dados.
 
 📱 Responsividade
 
-Interface adaptável com Tailwind:
+Interface construída com Tailwind CSS:
 
 Grid responsivo
 
-Sidebar oculta em mobile
+Sidebar adaptável
 
-Cards adaptativos
+Cards flexíveis
 
-Layout mobile-first
+Layout otimizado para mobile
 
 🎨 Padronização Visual
 
-Criado mini design system com:
+Mini Design System interno com:
 
-Classes reutilizáveis
+Classes utilitárias reutilizáveis
 
-Cards padrão
+Componentes de card padronizados
 
-Botões padronizados
+Botões estilizados
 
 Hierarquia visual consistente
 
@@ -196,7 +195,7 @@ Hierarquia visual consistente
 
 Estado reativo moderno
 
-Computed values
+Signals computados
 
 Imutabilidade
 
@@ -206,4 +205,8 @@ Separação de responsabilidades
 
 DRY (Don't Repeat Yourself)
 
-Component driven design
+Arquitetura orientada a componentes
+
+Estrutura pronta para backend real
+
+
