@@ -211,16 +211,17 @@ Estrutura pronta para backend real
 
 🖼️ Demonstração do Projeto
 ## 📊 Escalas
-![Escalas](./src/Imagens/dashboard.png)
+![Escalas] /src/Imagens/
 
 ## 👥 Membros
-![Membros](./src/Images/membros.png)
+![Membros] /src/Images/
 
 ## 💰 Doações
-![Doações](./src/Images/doacoes.png)
+![Doações] src/Images/
 
 ## 📢 Avisos
-![Avisos](./src/Images/avisos.png)
+![Avisos] src/Images/
+
 
 
 
