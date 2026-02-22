@@ -209,4 +209,18 @@ Arquitetura orientada a componentes
 
 Estrutura pronta para backend real
 
+🖼️ Demonstração do Projeto
+## 📊 Escalas
+![Escalas](./src/Imagens/dashboard.png)
+
+## 👥 Membros
+![Membros](./src/Images/membros.png)
+
+## 💰 Doações
+![Doações](./src/Images/doacoes.png)
+
+## 📢 Avisos
+![Avisos](./src/Images/avisos.png)
+
+
 
